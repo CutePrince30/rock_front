@@ -36,7 +36,6 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <link href="../assets/apps/css/todo-2.min.css" rel="stylesheet" type="text/css">
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL STYLES -->
     <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
@@ -47,7 +46,238 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="../assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <link href="../assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME LAYOUT STYLES -->
-    <link rel="shortcut icon" href="favicon.ico" /> </head>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <style>
+        /* Blog Page */
+        .blog-posts h2,
+        .ecommerce .blog-posts h2 {
+            padding-top: 0;
+        }
+        .blog-posts p {
+            text-align: justify;
+        }
+        .blog-posts .carousel {
+            margin-bottom: 0;
+        }
+        .blog-posts hr.blog-post-sep {
+            margin: 40px 0;
+        }
+        .blog-info {
+            list-style: none;
+            margin: 15px 0 12px 0;
+            padding-left:0;
+        }
+        .blog-info li {
+            padding: 0;
+            color: #555;
+            font-size: 13px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .blog-info li i {
+            color: #E84D1C;
+        }
+
+        .blog-posts .pagination li {
+            margin-left: -12px;
+            margin-right: 17px;
+        }
+
+        .blog-posts .more,
+        .blog-sidebar .more {
+            color: #E84D1C;
+        }
+
+        /* Blog Sidebar */
+        .recent-news {
+            overflow: hidden;
+        }
+        .recent-news h4,
+        .ecommerce .recent-news h4 {
+            font-size: 15px;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .recent-news h4 a {
+            color: #E84D1C;
+        }
+        .recent-news-inner{
+            padding: 0;
+        }
+        .blog-talks .tab-style-1 ul.nav-tabs li > a {
+            min-width: 50px;
+        }
+        .blog-photo-stream li {
+            overflow: hidden;
+            margin: 0 5px 8px 0;
+            display: inline-block;
+        }
+        .blog-photo-stream li img {
+            width: 54px;
+            height: 54px;
+            padding: 2px;
+            border: solid 1px #eee;
+        }
+        .blog-photo-stream li img:hover {
+            border-color: #E84D1C;
+            box-shadow: 0 0 1px #fff;
+            transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+        }
+        .blog-tags ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .blog-tags li {
+            position: relative;
+            margin: 0 16px 7px 0;
+            display: inline-block;
+        }
+        .blog-tags li a {
+            color: #555;
+            background: #f5f5f5;
+            display: inline-block;
+            padding: 3px 5px 3px 3px;
+        }
+        .blog-tags li a:hover {
+            color: #fff;
+            background: #E84D1C;
+            text-decoration: none;
+        }
+        .blog-tags li a:hover i {
+            color: #fff;
+        }
+        .blog-tags li i {
+            color: #E84D1C;
+            margin-right: 5px;
+            display: inline-block;
+        }
+        .blog-tags li a:after {
+            top: 50%;
+            width: 0;
+            left: 100%;
+            height: 0;
+            z-index: 2;
+            content: " ";
+            display: block;
+            margin-top: -12px;
+            position: absolute;
+            border-left: 12px solid #f5f5f5;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+        }
+        .blog-tags li a:hover:after {
+            border-left-color: #E84D1C;
+        }
+
+        .blog-talks .tab-content {
+            background: #FAFAFA;
+            padding: 20px 15px;
+        }
+        .blog-talks .nav-tabs {
+            margin-bottom: 0;
+        }
+        .blog-talks .nav-tabs > li {
+            margin-top: 1px;
+        }
+
+        /* Blog Sidebar categories BEGIN */
+        .sidebar-categories li a {
+            padding: 10px 0;
+            border-bottom: 1px solid #ECEBEB;
+            color: #333;
+        }
+        .sidebar-categories li a:hover {
+            background: none;
+        }
+        .sidebar-categories li > a:hover,
+        .sidebar-categories li.active > a,
+        .sidebar-categories li.active:hover > a {
+            color: #E84D1C;
+        }
+        .sidebar-categories li a:before {
+            content: "";
+            font-family: FontAwesome !important;
+            font-size: 8px;
+            padding-right: 10px;
+            position: relative;
+            top: -1px;
+        }
+        /* Blog Sidebar categories END */
+
+        /* Blog Item */
+        .blog-item .blog-item-img {
+            margin: 6px 0 25px;
+        }
+        .blog-item .blog-item-img .carousel {
+            margin-bottom: 0;
+        }
+        .blog-item blockquote {
+            margin: 20px 40px 18px;
+            border-color: #E84D1C;
+        }
+        .blog-item .blog-info {
+            margin: 20px 0;
+            padding: 8px 0;
+            border-top: solid 1px #ECEBEB;
+            border-bottom: solid 1px #ECEBEB;
+        }
+        .blog-item .blog-info li {
+            padding-left: 13px;
+            border-left: solid 1px #ECEBEB;
+        }
+        .blog-item .blog-info li:first-child {
+            padding-left: 0;
+            border-left: none;
+        }
+        .blog-item .blog-item-img .carousel-control {
+            top: 45%;
+        }
+
+        .blog-item .media {
+            border-bottom: solid 1px #ECEBEB;
+            margin-bottom: -1px;
+        }
+        .blog-item .comments {
+            border-top: solid 1px #ECEBEB;
+            padding-top: 15px;
+        }
+        .blog-item img.media-object {
+            top: 2px;
+            width: 60px;
+            height: 60px;
+            position: relative;
+        }
+        .blog-item h4.media-heading {
+            position: relative;
+            padding-top: 0;
+        }
+        .blog-item h4.media-heading span {
+            right: 0;
+            top: 3px;
+            color: #777;
+            font-size: 12px;
+            font-weight: 400;
+            position: absolute;
+        }
+        .blog-item h4.media-heading span a {
+            color: #E84D1C;
+        }
+
+        .mix-block .tab-content .col-md-3 {
+            padding-right: 0;
+        }
+        .mix-block .nav-tabs > li {
+            margin-top: 1px;
+        }
+    </style>
+</head>
 <!-- END HEAD -->
 
 <body class="page-container-bg-solid">
@@ -541,118 +771,138 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="page-content-inner">
                                 <div class="mt-content-body">
                                     <div class="row">
-                                        <div class="col-md-12 col-sm-6">
-                                            <div class="todo-tasklist">
-                                                <div class="todo-tasklist-item todo-tasklist-item-border-green">
-                                                    <div class="todo-tasklist-item-title"> 2013-09-07  祈祷者在苦难中成长（下） 王上17章：1—16节 </div>
-                                                    <div class="todo-tasklist-item-text"> 祷告有两种：生活的祷告和生命的祷告。 生活的祷告 - 衣食住行， 求学，工作，事业，感情，婚姻，家庭，子女，教育，疾病，退休等等事项。 我们将这些事项带到神的面前，求神带领，求神保守，求神帮助，求神 ... </div>
-                                                    <div class="todo-tasklist-controls pull-left">
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-bookmark"></i>
-                                                            证道
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-calendar"></i>
-                                                            2014-09-14
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-user"></i>
-                                                            王牧师
-                                                        </span>
+                                        <!-- BEGIN LEFT SIDEBAR -->
+                                        <div class="col-md-9 col-sm-9 blog-item">
+                                            <h2><a href="#">2013-09-07 祈祷者在苦难中成长（下） 王上17章：1—5节</a></h2>
+                                            <p>祷告有两种：生活的祷告和生命的祷告。 生活的祷告 - 衣食住行， 求学，工作，事业，感情，婚姻，家庭，子女，教育，疾病，退休等等事项。 我们将这些事项带到神的面前，求神带领，求神保守，求神帮助，求神 ...</p>
+                                            <blockquote>
+                                                <p>    7:1	基列寄居的提斯比人以利亚、对亚哈说、我指着所事奉永生耶和华以色列的　神起誓、这几年我若不祷告、必不降露不下雨。
+                                                <p>    17:2	耶和华的话临到以利亚说、</p>
+                                                <p>    17:3	你离开这里、往东去、藏在约但河东边的基立溪旁。</p>
+                                                <p>    17:4	你要喝那溪里的水．我已吩咐乌鸦在那里供养你。</p>
+                                                <p>    17:5	于是以利亚照着耶和华的话、去住在约但河东的基立溪旁。</p>
+
+                                                <small>王上17章： <cite title="Source Title">1—5节</cite></small>
+                                            </blockquote>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p>
+                                            <p>Culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p>
+                                            <ul class="blog-info">
+                                                <li><i class="fa fa-user"></i> By admin</li>
+                                                <li><i class="fa fa-calendar"></i> 25/07/2013</li>
+                                                <li><i class="fa fa-comments"></i> 17</li>
+                                                <li><i class="fa fa-tags"></i> Metronic, Keenthemes, UI Design</li>
+                                            </ul>
+
+                                            <h2>Comments</h2>
+                                            <div class="comments">
+                                                <div class="media">
+                                                    <a href="#" class="pull-left">
+                                                        <img src="../assets/layouts/layout3/img/avatar9.jpg" alt="" class="media-object">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading <span>5 hours ago / <a href="#">Reply</a></span></h4>
+                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                                                        <!-- Nested media object -->
+                                                        <div class="media">
+                                                            <a href="#" class="pull-left">
+                                                                <img src="../assets/layouts/layout3/img/avatar9.jpg" alt="" class="media-object">
+                                                            </a>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Media heading <span>17 hours ago / <a href="#">Reply</a></span></h4>
+                                                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--end media-->
+                                                        <div class="media">
+                                                            <a href="#" class="pull-left">
+                                                                <img src="../assets/layouts/layout3/img/avatar9.jpg" alt="" class="media-object">
+                                                            </a>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Media heading <span>2 days ago / <a href="#">Reply</a></span></h4>
+                                                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--end media-->
                                                     </div>
                                                 </div>
-                                                <div class="todo-tasklist-item todo-tasklist-item-border-green">
-                                                    <div class="todo-tasklist-item-title"> 生活的祷告与生命的祷告 </div>
-                                                    <div class="todo-tasklist-item-text"> 祷告有两种：生活的祷告和生命的祷告。 生活的祷告 - 衣食住行， 求学，工作，事业，感情，婚姻，家庭，子女，教育，疾病，退休等等事项。 我们将这些事项带到神的面前，求神带领，求神保守，求神帮助，求神 ... </div>
-                                                    <div class="todo-tasklist-controls pull-left">
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-bookmark"></i>
-                                                            证道
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-calendar"></i>
-                                                            2014-09-14
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-user"></i>
-                                                            王牧师
-                                                        </span>
+                                                <!--end media-->
+                                                <div class="media">
+                                                    <a href="#" class="pull-left">
+                                                        <img src="../assets/layouts/layout3/img/avatar9.jpg" alt="" class="media-object">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading <span>July 25,2013 / <a href="#">Reply</a></span></h4>
+                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                                                     </div>
                                                 </div>
-                                                <div class="todo-tasklist-item todo-tasklist-item-border-green">
-                                                    <div class="todo-tasklist-item-title"> 2013-08-11   诗班新学诗歌《花尽一生来爱你》 </div>
-                                                    <div class="todo-tasklist-item-text"> 祷告有两种：生活的祷告和生命的祷告。 生活的祷告 - 衣食住行， 求学，工作，事业，感情，婚姻，家庭，子女，教育，疾病，退休等等事项。 我们将这些事项带到神的面前，求神带领，求神保守，求神帮助，求神 ... </div>
-                                                    <div class="todo-tasklist-controls pull-left">
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-bookmark"></i>
-                                                            证道
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-calendar"></i>
-                                                            2014-09-14
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-user"></i>
-                                                            王牧师
-                                                        </span>
+                                                <!--end media-->
+                                            </div>
+
+                                            <div class="post-comment padding-top-40">
+                                                <h3>评论</h3>
+                                                <form role="form">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" rows="8"></textarea>
+                                                    </div>
+                                                    <p><button class="btn btn-primary" type="submit">Post a Comment</button></p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- END LEFT SIDEBAR -->
+
+                                        <!-- BEGIN RIGHT SIDEBAR -->
+                                        <div class="col-md-3 col-sm-3 blog-sidebar">
+                                            <!-- CATEGORIES START -->
+                                            <h3 class="no-top-space">分类</h3>
+                                            <ul class="nav sidebar-categories margin-bottom-40">
+                                                <li class="active"><a href="#">证道 (18)</a></li>
+                                                <li><a href="#">赞美 (5)</a></li>
+                                                <li><a href="#">祷告 (12)</a></li>
+                                                <li><a href="#">主日学 (7)</a></li>
+                                            </ul>
+                                            <!-- CATEGORIES END -->
+
+                                            <!-- BEGIN RECENT NEWS -->
+                                            <h3>最新文章</h3>
+                                            <div class="recent-news margin-bottom-10">
+                                                <div class="row margin-bottom-10">
+                                                    <div class="col-md-9">
+                                                        <h4><a href="#">生活的祷告与生命的祷告</a></h4>
+                                                        <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
                                                     </div>
                                                 </div>
-                                                <div class="todo-tasklist-item todo-tasklist-item-border-green">
-                                                    <div class="todo-tasklist-item-title"> 2013-07-07    主日新学诗歌《将天敞开》 </div>
-                                                    <div class="todo-tasklist-item-text"> 祷告有两种：生活的祷告和生命的祷告。 生活的祷告 - 衣食住行， 求学，工作，事业，感情，婚姻，家庭，子女，教育，疾病，退休等等事项。 我们将这些事项带到神的面前，求神带领，求神保守，求神帮助，求神 ... </div>
-                                                    <div class="todo-tasklist-controls pull-left">
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-bookmark"></i>
-                                                            证道
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-calendar"></i>
-                                                            2014-09-14
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-user"></i>
-                                                            王牧师
-                                                        </span>
+                                                <div class="row margin-bottom-10">
+                                                    <div class="col-md-9 ">
+                                                        <h4><a href="#">2013-08-11 诗班新学诗歌《花尽一生来爱你》</a></h4>
+                                                        <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
                                                     </div>
                                                 </div>
-                                                <div class="todo-tasklist-item todo-tasklist-item-border-green">
-                                                    <div class="todo-tasklist-item-title"> 2013-07-07  祈祷者在苦难中成长（下） 王上17章：1—16节 </div>
-                                                    <div class="todo-tasklist-item-text"> 祷告有两种：生活的祷告和生命的祷告。 生活的祷告 - 衣食住行， 求学，工作，事业，感情，婚姻，家庭，子女，教育，疾病，退休等等事项。 我们将这些事项带到神的面前，求神带领，求神保守，求神帮助，求神 ... </div>
-                                                    <div class="todo-tasklist-controls pull-left">
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-bookmark"></i>
-                                                            证道
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-calendar"></i>
-                                                            2014-09-14
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-user"></i>
-                                                            王牧师
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="todo-tasklist-item todo-tasklist-item-border-green">
-                                                    <div class="todo-tasklist-item-title"> 2013-07-07  祈祷者在苦难中成长（下） 王上17章：1—16节 </div>
-                                                    <div class="todo-tasklist-item-text"> 祷告有两种：生活的祷告和生命的祷告。 生活的祷告 - 衣食住行， 求学，工作，事业，感情，婚姻，家庭，子女，教育，疾病，退休等等事项。 我们将这些事项带到神的面前，求神带领，求神保守，求神帮助，求神 ... </div>
-                                                    <div class="todo-tasklist-controls pull-left">
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-bookmark"></i>
-                                                            证道
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-calendar"></i>
-                                                            2014-09-14
-                                                        </span>
-                                                        <span class="todo-tasklist-date">
-                                                            <i class="fa fa-user"></i>
-                                                            王牧师
-                                                        </span>
+                                                <div class="row margin-bottom-10">
+                                                    <div class="col-md-9">
+                                                        <h4><a href="#">2013-07-07 主日新学诗歌《将天敞开》</a></h4>
+                                                        <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- END RECENT NEWS -->
+
+                                            <!-- BEGIN BLOG TAGS -->
+                                            <div class="blog-tags margin-bottom-20">
+                                                <h3>标签</h3>
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>OS</a></li>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>Metronic</a></li>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>Dell</a></li>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>Conquer</a></li>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>MS</a></li>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>Google</a></li>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>Keenthemes</a></li>
+                                                    <li><a href="#"><i class="fa fa-tags"></i>Twitter</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- END BLOG TAGS -->
                                         </div>
+                                        <!-- END RIGHT SIDEBAR -->
                                     </div>
                                 </div>
                             </div>
@@ -1304,7 +1554,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
 <!-- END THEME GLOBAL SCRIPTS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
 <script src="../assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
