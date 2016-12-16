@@ -49,6 +49,46 @@ License: You must have a valid license purchased only from themeforest(the above
     <link rel="shortcut icon" href="favicon.ico" />
 
     <style>
+        .media-body p {
+            margin-top: 0px;
+        }
+
+        /*Twitter block*/
+        .blog-twitter-block {
+            padding: 5px;
+            position: relative;
+            margin-bottom: 10px;
+            border-right: solid 2px #ddd;
+        }
+
+        .blog-twitter-block:hover {
+            background: #fafafa;
+            border-color: #e84d1c;
+        }
+
+        .blog-twitter-block a {
+            color: #4d90fe;
+        }
+
+        .blog-twitter-block p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .blog-twitter-block span {
+            color: #555;
+            display: block;
+            font-size: 12px;
+        }
+
+        .blog-twitter-block i.blog-twiiter-icon {
+            color: #eee;
+            right: 10px;
+            bottom: 10px;
+            font-size: 30px;
+            position: absolute;
+        }
+
         .light {
             background-color: #fff;
         }
@@ -801,7 +841,15 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <li><i class="fa fa-tags"></i> 证道</li>
                                             </ul>
 
-                                            <h2>Comments</h2>
+                                            <h3>评论</h3>
+                                            <div class="post-comment padding-top-40">
+                                                <form role="form">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" rows="8"></textarea>
+                                                    </div>
+                                                    <p><button class="btn btn-primary" type="submit">发表评论</button></p>
+                                                </form>
+                                            </div>
                                             <div class="comments">
                                                 <div class="media">
                                                     <a href="#" class="pull-left">
@@ -846,15 +894,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <!--end media-->
                                             </div>
 
-                                            <div class="post-comment padding-top-40">
-                                                <h3>评论</h3>
-                                                <form role="form">
-                                                    <div class="form-group">
-                                                        <textarea class="form-control" rows="8"></textarea>
-                                                    </div>
-                                                    <p><button class="btn btn-primary" type="submit">Post a Comment</button></p>
-                                                </form>
-                                            </div>
+
                                         </div>
                                         <!-- END LEFT SIDEBAR -->
 
@@ -872,24 +912,39 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                             <!-- BEGIN RECENT NEWS -->
                                             <h3>最新文章</h3>
-                                            <div class="recent-news margin-bottom-10">
-                                                <div class="row margin-bottom-10">
-                                                    <div class="col-md-9">
-                                                        <h4><a href="#">生活的祷告与生命的祷告</a></h4>
-                                                        <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
-                                                    </div>
+                                            <div class="blog-twitter margin-bottom-40">
+                                                <div class="blog-twitter-block">
+                                                    <p>
+                                                        At vero eos et accusamus et iusto odio.
+                                                    </p>
+                                                    <a href="#">
+                                                        <em>read more</em>
+                                                    </a>
+                                                    <span>
+									5 hours ago </span>
+                                                    <i class="fa fa-twitter blog-twiiter-icon"></i>
                                                 </div>
-                                                <div class="row margin-bottom-10">
-                                                    <div class="col-md-9 ">
-                                                        <h4><a href="#">2013-08-11 诗班新学诗歌《花尽一生来爱你》</a></h4>
-                                                        <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
-                                                    </div>
+                                                <div class="blog-twitter-block">
+                                                    <p>
+                                                        At vero eos et accusamus et iusto odio.
+                                                    </p>
+                                                    <a href="#">
+                                                        <em>read more</em>
+                                                    </a>
+                                                    <span>
+									7 hours ago </span>
+                                                    <i class="fa fa-twitter blog-twiiter-icon"></i>
                                                 </div>
-                                                <div class="row margin-bottom-10">
-                                                    <div class="col-md-9">
-                                                        <h4><a href="#">2013-07-07 主日新学诗歌《将天敞开》</a></h4>
-                                                        <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
-                                                    </div>
+                                                <div class="blog-twitter-block">
+                                                    <p>
+                                                        At vero eos et accusamus et iusto odio.
+                                                    </p>
+                                                    <a href="#">
+                                                        <em>read more</em>
+                                                    </a>
+                                                    <span>
+									8 hours ago </span>
+                                                    <i class="fa fa-twitter blog-twiiter-icon"></i>
                                                 </div>
                                             </div>
                                             <!-- END RECENT NEWS -->
